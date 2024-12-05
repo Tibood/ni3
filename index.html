@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel=stylesheet href=styles.css>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pakito</title>
+    <link rel=stylesheet href=styles.css>
+    <script src="index.js" type="module"></script>
+</head>
+
+<body>
+    <div class="horizontal end">
         <h1>Nuit de l'info 2024</h1>
-        <img src="Sans_titre.png">
-    </body>
+        <div class="soundComponent">
+            <img src="/images/mute.svg" id="muteSvg" alt="logo" width="40" height="40" style="display: none;"></img>
+            <img src="/images/noMute.svg" id="NomuteSvg" alt="logo" width="40" height="40"></img>
+        </div>
+    </div>
+    <div class="vertical">
+
+        <div class="horizontal">
+            <div id="golden-shower" class="vertical text-container closeable">
+                
+            </div>
+            <div class="vertical">
+                <div class="zone">
+                    <div class="human"></div>
+                    <div class="point" style="top: 30%; left: 50%;" target="#golden-shower" content="#bidon">
+                        <div class="-description"><p>Les poumons de la mer</p></div>
+                    </div>
+                    <div class="point" style="top: 28%; left: 45%;" target="#golden-shower" content="#coeur">
+                        <div class="-description"><p>Le coeur de la mer</p></div>
+                    </div>
+                    <div class="point" style="top: 48%; left: 53%;" target="#golden-shower" content="#intestin">
+                        <div class="-description"><p>L'intestin de la mer</p></div>
+                    </div>
+                    <div class="point" style="top: 10%; left: 50%;" target="#golden-shower" content="#cerveau">
+                        <div class="-description"><p>Le cerveau de la mer</p></div>
+                    </div>
+                    <div class="point" style="top: 90%; left: 65%;" target="#golden-shower" content="#petons">
+                        <div class="-description"><p>Les petons de la mer</p></div>
+                    </div>
+                    <div class="point" style="top: 40%; left: 85%;" target="#golden-shower" content="#sang">
+                        <div class="-description"><p>Le circuit sanguin de la mer</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template id="bidon">
+        <h2>Le plancton, les poumons de la mer</h2>
+                <img class="image" src="https://picsum.photos/id/237/300/200" alt="plancton">
+                <p>
+                    Le plancton ne se mange pas, il se déguste avec la beuteu de ta mère le père
+                    de ton oncle.Le plancton ne se mange pas, il se déguste avec la beuteu de ta mère
+                    le père de ton oncle.Le plancton ne se mange pas, il se déguste avec la beuteu de
+                    ta mère le père de ton oncle.Le plancton ne se mange pas, il se déguste avec la
+                    beuteu de ta mère le père de ton oncle.Le plancton ne se mange pas, il se déguste
+                    avec la beuteu de ta mère le père de ton oncle.Le plancton ne se mange pas, il se
+                    déguste avec la beuteu de ta mère le père de ton oncle.
+                </p>
+    </template>
+</body>
+
 </html>
