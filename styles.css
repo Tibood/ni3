@@ -124,6 +124,8 @@ h1 {
 
 .text-container{
     padding: 4rem;
+    max-height: 80vh;
+    overflow-y: auto;
     justify-content: start;
 }
 .closeable{

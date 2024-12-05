@@ -22,17 +22,23 @@ document.querySelectorAll('[content][target]').forEach((el)=>{
     }
 })
 
+var backgroundMusic
+
 //// Sound ////
 document.getElementById('muteSvg').onclick = function() {
     this.style.display = 'none';
+    backgroundMusic.play();
     document.getElementById('NomuteSvg').style.display = 'block';
 }
 
 document.getElementById('NomuteSvg').onclick = function() {
     this.style.display = 'none';
+    backgroundMusic.pause();
     document.getElementById('muteSvg').style.display = 'block';
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM complètement chargé !");
-    });
+document.addEventListener('DOMContentLoaded', (event) => {
+    backgroundMusic = document.getElementById('backgroundMusic');
+    backgroundMusic.volume = 0.15;
+    // backgroundMusic.play();
+});
